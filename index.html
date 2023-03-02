@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Destribuidora e Atacadiasta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+        <div class="menu">
+            <h1>Bebidas</h1>
+            <input type="search" placeholder="pesquisar"  name="" id="">
+            <a href="#"><button>entar</button></a>
+              
+                <div class="carrinho">
+            <div class="compra">
+                0
+              </div>
+            <img src="imagens/carrinho.png" alt="">
+                <div class="quantidade">
+            <p>seus carrinho está vazio :(</p>
+            <div class="valor">
+                <p>Subtotal</p>
+                <p>R$0,00</p>
+            </div> <!--valor-->
+            </div><!--quantidade-->
+                </div><!--carrinho-->
+        </div>
+    <nav>
+        <a href="#cer" onclick="cerveja()" class="cervejas">Cerveja</a>
+        <a href="#vinho" class="vinho">Vinho</a>
+        <a href="#Whisky" class="whisky">Whisky</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <div class="lista">
+            <p>Filtrar</p>
+            <div class="lis">
+                <ul>
+                    <li >Preço
+                        <ul>
+                            <li>
+                                <input type="button" value="R$10.00" onclick="primeiro()">
+                            <li>
+                                <input type="button" value="R$10.00 a R$20.00" onclick="segundo()">
+                            </li>
+                            <li>
+                                <input type="button" value="R$30.00 a R$40.00">
+                            </li>
+                    
+                                <!--<input type="number" placeholder="10x" name="menor" id="menor"> 
+                                até
+                                <input type="number"placeholder="10x"name="menor" id="maior">-->
+                        </ul>
+                    </li>
+                    <li class="alcool">Com ou Sem álcool
+                        <ul>
+                                <li>
+                                <p><input type="checkbox" name="" id="">Com álcool</p>
+                                </li>
+                                <li>
+                                    <p><input type="checkbox" name="" id="">Sem álcool</p>
+                                </li>        
+                        </ul>
+                    </li>
+                    <li class="marca">Marca
+                            <ul>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Itaipava</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Heineken</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Skol</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Faxe</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Corona</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Dama Bier</p>
+                            </li>
+                            <li>
+                                <p><input type="checkbox" name="" id="">Praga</p>
+                            </li>
+                             <li>
+                            <p><input type="checkbox" name="" id="">Super Bock</p>
+                            </li>
+                            <li>
+                            <p><input type="checkbox" name="" id="">Petra</p>
+                            </li>
+                            <li>
+                            <p><input type="checkbox" name="" id="">Brahma</p>
+                            </li>
+                      </ul> 
+                        </li>
+                </ul>
+            </div><!--lis-->
+        </div><!--lista-->
+  <div id="pri">
+        <aside >
+            <div id="dez" class="van-produto" >
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/haineken-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/haineken-m.png" type="image/png">
+                    <img src="imagens/haineken.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken 600ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2 >R$ 3,79</h2>
+                <p>Por Unidade</p>
+                <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+            <div  id="vinte" class="van-produto">
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/long-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/long-m.png" type="image/png">
+                    <img src="imagens/long.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken long neck 330ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2>R$ 11,80</h2>
+                <p>Por Unidade</p>
+                <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+            <div id="dez2" class="van-produto">
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/original-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/original-m.png" type="image/png">
+                    <img src="imagens/original.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken 600ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2>R$ 4,79</h2>
+                <p>Por Unidade</p>
+                    <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+      </aside>
+      <div id="seg">
+    <aside >
+        <div id="dez3"  class="van-produto">
+            <picture class="img">
+                <source media="(max-width: 650px)" srcset="imagens/haineken-p.png" type="image/png">
+                 <source media="(max-width:800px)" srcset="imagens/haineken-m.png" type="image/png">
+                <img src="imagens/haineken.png" alt="">
+            </picture>
+            <h1>Cerveja Heineken 600ml</h1>
+            <h3><del>R$ 4,39</del></h3>
+            <h2>R$ 5,79</h2>
+            <p>Por Unidade</p>
+            <div class="button"><input type="button" value="comprar"></div> <!--button-->
+        </div><!--van-produto-->
+        <div id="vinte2" class="van-produto">
+            <picture class="img">
+                <source media="(max-width: 650px)" srcset="imagens/long-p.png" type="image/png">
+                 <source media="(max-width:800px)" srcset="imagens/long-m.png" type="image/png">
+                <img src="imagens/long.png" alt="">
+            </picture>
+            <h1>Cerveja Heineken long neck 330ml</h1>
+            <h3><del>R$ 4,39</del></h3>
+            <h2>R$ 12.50</h2>
+            <p>Por Unidade</p>
+            <div class="button"><input type="button" value="comprar"></div> <!--button-->
+        </div><!--van-produto-->
+        <div  id="vinte3" class="van-produto">
+            <picture class="img">
+                <source media="(max-width: 650px)" srcset="imagens/original-p.png" type="image/png">
+                 <source media="(max-width:800px)" srcset="imagens/original-m.png" type="image/png">
+                <img src="imagens/original.png" alt="">
+            </picture>
+            <h1>Cerveja Heineken 600ml</h1>
+            <h3><del>R$ 4,39</del></h3>
+            <h2>R$ 15,50</h2>
+            <p>Por Unidade</p>
+                <div class="button"><input type="button" value="comprar"></div> <!--button-->
+        </div><!--van-produto-->
+    </aside>
+    </div>
+    <div id="seg">
+        <aside >
+            <div id="dez4"  class="van-produto">
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/haineken-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/haineken-m.png" type="image/png">
+                    <img src="imagens/haineken.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken 600ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2>R$ 6,00</h2>
+                <p>Por Unidade</p>
+                <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+            <div id="vinte4" class="van-produto">
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/long-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/long-m.png" type="image/png">
+                    <img src="imagens/long.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken long neck 330ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2>R$ 12.50</h2>
+                <p>Por Unidade</p>
+                <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+            <div  id="vinte5" class="van-produto">
+                <picture class="img">
+                    <source media="(max-width: 650px)" srcset="imagens/original-p.png" type="image/png">
+                     <source media="(max-width:800px)" srcset="imagens/original-m.png" type="image/png">
+                    <img src="imagens/original.png" alt="">
+                </picture>
+                <h1>Cerveja Heineken 600ml</h1>
+                <h3><del>R$ 4,39</del></h3>
+                <h2>R$ 15,50</h2>
+                <p>Por Unidade</p>
+                    <div class="button"><input type="button" value="comprar"></div> <!--button-->
+            </div><!--van-produto-->
+        </aside>
+        </div>
+</div>
+        <div class="img">
+            <div class="pict" id="cer">
+                <picture class="c">
+                    <picture class="img">
+                    <source media="(max-width:720px)" srcset="imagens/01-p.jpg" type="image/jpg">
+                    <img src="imagens/01.jpg" alt="">
+                </picture>
+            </div>
+            <div class="pict" id="Whis">
+                <picture class="w" >
+                    <picture class="img">
+                    <source media="(max-width:720px)" srcset="imagens/02-p.jpg" type="image/jpg">
+                    <img src="imagens/02.jpg" alt="">
+                </picture>
+            </div>
+            <div class="pict"id="vinho">
+                <picture class="v" >
+                    <picture class="img">
+                    <source media="(max-width:720px)" srcset="imagens/03-p.jpg" type="image/jpg">
+                    <img src="imagens/03.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+    </article>
+</main> 
+<footer>
+    <div class="roda-pe">
+        <div class="infor">
+            <h1>Atendimento</h1>
+            <h2><a href="https://api.whatsapp.com/send?phone=556594137384&text=Ol%C3%A1%20tudo%20bem?%20Qual%20%C3%A9%20a%20duvida?" target="_blank">(65)98413-7384</a></h2>
+            <p>Segunda a sexta:8h ás 18:30</p>
+            <p>Sábado 8h30 ás 17h</p>  
+            <p>costapablo51@gmail.com</p>
+        </div>
+        <div class="infor-s">
+            <h1>serviço</h1>
+                <p><a href="#">Área de cline</a></p>
+                <p><a href="#">Como comprar</a></p>
+                <p><a href="#">Entrega</a></p>
+                <p><a href="#">Retire na loja</a></p>
+                <p><a href="#">Pagamento</a></p>
+                <P><a href="#">Politica de troca de protudos</a></P>
+        </div>
+        <div class="infor">
+            <h1>Pagamento</h1>
+            
+        </div>
+    </div>
+    <hr>
+    <p>Desenolvido por <a href="https://pablocostasrv.netlify.app" target="_blank">Pablo Costa</a></p>    
+</footer>
+</body>
+</html>
